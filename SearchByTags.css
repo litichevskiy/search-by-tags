@@ -1,0 +1,113 @@
+
+div[data-tags-cont="container"]{
+	
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+
+}
+
+span[data-name="visibleForm"]{
+
+	z-index: 100;
+	position: absolute;
+	right: 2%;
+	top: 1%;
+	border-radius: 50%;
+	font-size: 1em;
+	background-color: #E6E6FA;
+	color: #6495ED;
+	padding:0.5%;
+
+}
+
+span[data-name="visibleForm"],span[data-name="hiddenForm"]:hover{
+
+	cursor: pointer;
+}
+
+span[data-name="hiddenForm"]{
+
+	position: absolute;
+	right: 0%;
+	margin: 1%;
+	background-color:#6495ED;
+	color: white; 
+
+}
+
+form[data-name="add_Remote_tagName"]{
+	 
+	visibility: hidden; 
+	background-color: lightgrey;
+	z-index: 100;
+	position: absolute;
+	right: 2%;
+	top: 1%;
+	width: 30%;
+	
+}
+
+fieldset{
+
+	max-width: 92%;
+
+}
+
+legend{
+
+	max-width: 90%;
+	
+}
+
+textarea{
+
+	max-width: 25em;
+	max-height: 10em;
+}
+
+section[data-tags-cont="list"]{ 
+
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 20%;
+	height: 100%;
+	overflow: auto;
+}
+
+section[data-tags-cont="header"]{ 
+
+	position: absolute;
+	top: 0%;
+	left: 20%;
+	width: 25%;
+	height: 100%;
+	overflow: auto;
+}
+
+section[data-tags-cont="contentsTag"]{
+
+	position: absolute;
+	top: 0%;
+	left: 45%;
+	width: 55%;
+	height: 100%;
+	overflow: auto;
+
+}
+
+
+ul{
+
+	margin: 0%;
+	padding-left: 1%;
+	
+}
+
+li{
+
+	list-style-type: none;
+}
