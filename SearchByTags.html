@@ -11,295 +11,42 @@
 
 		<div data-tags-cont="container" >
 
-			<span data-name="visibleForm" >&#10010;</span>
+			<input type="text" data-name="search"/>
+			<button data-name="search">найти</button>
 
-			<form data-name="add_Remote_tagName">
+			<section data-name="add_Remove_tagName" >
 
 				<span data-name="hiddenForm" >&#10008;</span>
 
-				<fieldset>
+				<h4>добавить заметку:</h4> 
+				<button data-name="addNotis" >ДОБАВИТЬ</button>
+				<span data-text-name="tagsName" >имя тэга</span> <input type="text" data-name="tagsName" />
+				<span>заголовок</span> <input type="text" data-name="headerForNotis" />
 
-					<legend> добавить тэг </legend>	
-					<span>tag name</span> <input type="text">
-					<br>
-					<span>tag content</span> 
-					<br>
-					<textarea> </textarea>
-					<br>
-					<br>
-					<input type="submit">
+				<textarea placeholder="Текст заметки"></textarea>
 
-				</fieldset>
+				<h4>удалить заметку:</h4>
 
-				<fieldset>
+				<span data-text-name="RemoveTagsName" >имя тэга</span>				
+				<input type="text" data-name="RemoveTagsName" />
+				<button data-name="removeNotis" >УДАЛИТЬ</button>
 
-					<legend> удалить тэг </legend>
-					<span>tag name</span> <input type="text">
-					<br>
-					<br>
-					<input type="submit">
+			</section>
 
-				</fieldset>
+		
+			<section data-tags-cont="listTags">
+					
+					
 
-				<fieldset>
+				<ul data-tags-cont="listTags" >
 
-					<legend> найти тэг </legend>
-					<span>tag name</span> <input type="text">
-					<br>
-					<br>
-					<input type="submit">
+					<script type="template" data-template-name="tag">
+	    				<li >
+	        				<input type="checkbox" data-name-checked="false" data-name-tag="%%DATA%%" >
+	        				<span>%%TAG_NAME%%</span>
+	    				</li>
+					</script>
 
-				</fieldset>
-
-			</form>
-
-			<section data-tags-cont="list">
-
-				<ul>
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>one</span>
-						</label>	
-					</li>
-
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>two</span>
-						</label>
-					</li>
-
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>three</span>
-						</label>
-					</li>
-
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>four</span>
-						</label>
-					</li>
-
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>five</span>
-						</label>
-					</li>
-
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>one</span>
-						</label>	
-					</li>
-
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>two</span>
-						</label>
-					</li>
-
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>three</span>
-						</label>
-					</li>
-
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>four</span>
-						</label>
-					</li>
-
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>five</span>
-						</label>
-					</li>
-
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>one</span>
-						</label>	
-					</li>
-
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>two</span>
-						</label>
-					</li>
-
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>three</span>
-						</label>
-					</li>
-
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>four</span>
-						</label>
-					</li>
-
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>five</span>
-						</label>
-					</li>
-
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>one</span>
-						</label>	
-					</li>
-
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>two</span>
-						</label>
-					</li>
-
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>three</span>
-						</label>
-					</li>
-
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>four</span>
-						</label>
-					</li>
-
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>five</span>
-						</label>
-					</li>
-
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>one</span>
-						</label>	
-					</li>
-
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>two</span>
-						</label>
-					</li>
-
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>three</span>
-						</label>
-					</li>
-
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>four</span>
-						</label>
-					</li>
-
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>five</span>
-						</label>
-					</li>
-
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>one</span>
-						</label>	
-					</li>
-
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>two</span>
-						</label>
-					</li>
-
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>three</span>
-						</label>
-					</li>
-
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>four</span>
-						</label>
-					</li>
-
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>five</span>
-						</label>
-					</li>
-
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>one</span>
-						</label>	
-					</li>
-
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>two</span>
-						</label>
-					</li>
-
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>three</span>
-						</label>
-					</li>
-
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>four</span>
-						</label>
-					</li>
-
-					<li>
-						<label>
-							<input type="checkbox" >
-							<span>five</span>
-						</label>
-					</li>
 
 				</ul>
 
@@ -307,104 +54,35 @@
 
 			<section data-tags-cont="header" >
 
-				<ul>
-					<li>
-						Поиско́вый и́ндекс — структура данных, которая содержит информацию о документах и используется в поисковых системах.
-					</li>
-					<br>
-					<li>
-						Поиско́вый и́ндекс — структура данных, которая содержит информацию о документах и используется в поисковых системах.
-					</li>
-					<br>
-					<li>
-						Поиско́вый и́ндекс — структура данных, которая содержит информацию о документах и используется в поисковых системах.
-					</li>
-					<br>
-					<li>
-						Поиско́вый и́ндекс — структура данных, которая содержит информацию о документах и используется в поисковых системах.
-					</li>
-					<br>
-					<li>
-						Поиско́вый и́ндекс — структура данных, которая содержит информацию о документах и используется в поисковых системах.
-					</li>
-					<br>
-					<li>
-						Поиско́вый и́ндекс — структура данных, которая содержит информацию о документах и используется в поисковых системах.
-					</li>
-					<br>
-					<li>
-						Поиско́вый и́ндекс — структура данных, которая содержит информацию о документах и используется в поисковых системах.
-					</li>
-					<br>
-					<li>
-						Поиско́вый и́ндекс — структура данных, которая содержит информацию о документах и используется в поисковых системах.
-					</li>
-					<br>
-					<li>
-						Поиско́вый и́ндекс — структура данных, которая содержит информацию о документах и используется в поисковых системах.
-					</li>
-					<br>
-					<li>
-						Поиско́вый и́ндекс — структура данных, которая содержит информацию о документах и используется в поисковых системах.
-					</li>
-					<br>
-					<li>
-						Поиско́вый и́ндекс — структура данных, которая содержит информацию о документах и используется в поисковых системах.
-					</li>
-					<br>
-					<li>
-						Поиско́вый и́ндекс — структура данных, которая содержит информацию о документах и используется в поисковых системах.
-					</li>
-					<br>
-					<li>
-						Поиско́вый и́ндекс — структура данных, которая содержит информацию о документах и используется в поисковых системах.
-					</li>
-					<br>
-					<li>
-						Поиско́вый и́ндекс — структура данных, которая содержит информацию о документах и используется в поисковых системах.
-					</li>
-					<br>
-					<li>
-						Поиско́вый и́ндекс — структура данных, которая содержит информацию о документах и используется в поисковых системах.
-					</li>
-
+				<ul data-tags-cont="listHeader">
+ 
+					<script type="template" data-template-name="header">
+						<li>
+							<span data-name="date" >%%DATE%%</span>
+		    				<h4 data-id-name="%%ID%%" >%%HEADER%%</h4>
+		    			</li>
+					</script>
+ 
 				</ul>
 
 			</section>
 
 			<section data-tags-cont="contentsTag" >
 
+				<span data-name="visibleForm" >&#10010;</span>
+
 				<article>
 
-					<h3>заголовок</h3>
+					<ul data-tags-cont="notisBody"> 
 
-					<p>
-						Клонирование существующего репозитория
-						Если вы желаете получить копию существующего репозитория Git, например, проекта, в котором вы хотите поучаствовать, то вам нужна команда git clone. Если вы знакомы с другими системами контроля версий, такими как Subversion, то заметите, что команда называется clone, а не checkout. Это важное отличие — Git получает копию практически всех данных, что есть на сервере. Каждая версия каждого файла из истории проекта забирается (pulled) с сервера, когда вы выполняете git clone. Фактически, если серверный диск выйдет из строя, вы можете использовать любой из клонов на любом из клиентов, для того чтобы вернуть сервер в то состояние, в котором он находился в момент клонирования (вы можете потерять часть серверных перехватчиков (server-side hooks) и т.п., но все данные, помещённые под версионный контроль, будут сохранены, подробнее см. в главе 4).
+						<script type="template" data-template-name="notisBody">
+							<li>
+			    				<h2>%%HEADER%%</h2>
+								<p data-content-name="notis">%%CONTENT_NOTIS%%</p>
+			    			</li>
+						</script>
 
-						Клонирование репозитория осуществляется командой git clone [url]. Например, если вы хотите клонировать 		библиотеку Ruby Git, известную как Grit, вы можете сделать это следующим образом:
-
-						$ git clone git://github.com/schacon/grit.git
-						Эта команда создаёт каталог с именем grit, инициализирует в нём каталог .git, скачивает все данные для этого репозитория и создаёт (checks out) рабочую копию последней версии. Если вы зайдёте в новый каталог grit, вы увидите в нём проектные файлы, пригодные для работы и использования. Если вы хотите клонировать репозиторий в каталог, отличный от grit, можно это указать в следующем параметре командной строки:
-
-						$ git clone git://github.com/schacon/grit.git mygrit
-						Эта команда делает всё то же самое, что и предыдущая, только результирующий каталог будет назван mygrit.
-
-					</p>
-					<p>
-
-						Клонирование существующего репозитория
-						Если вы желаете получить копию существующего репозитория Git, например, проекта, в котором вы хотите поучаствовать, то вам нужна команда git clone. Если вы знакомы с другими системами контроля версий, такими как Subversion, то заметите, что команда называется clone, а не checkout. Это важное отличие — Git получает копию практически всех данных, что есть на сервере. Каждая версия каждого файла из истории проекта забирается (pulled) с сервера, когда вы выполняете git clone. Фактически, если серверный диск выйдет из строя, вы можете использовать любой из клонов на любом из клиентов, для того чтобы вернуть сервер в то состояние, в котором он находился в момент клонирования (вы можете потерять часть серверных перехватчиков (server-side hooks) и т.п., но все данные, помещённые под версионный контроль, будут сохранены, подробнее см. в главе 4).
-
-						Клонирование репозитория осуществляется командой git clone [url]. Например, если вы хотите клонировать 		библиотеку Ruby Git, известную как Grit, вы можете сделать это следующим образом:
-
-						$ git clone git://github.com/schacon/grit.git
-						Эта команда создаёт каталог с именем grit, инициализирует в нём каталог .git, скачивает все данные для этого репозитория и создаёт (checks out) рабочую копию последней версии. Если вы зайдёте в новый каталог grit, вы увидите в нём проектные файлы, пригодные для работы и использования. Если вы хотите клонировать репозиторий в каталог, отличный от grit, можно это указать в следующем параметре командной строки:
-
-						$ git clone git://github.com/schacon/grit.git mygrit
-						Эта команда делает всё то же самое, что и предыдущая, только результирующий каталог будет назван mygrit.
-
-					</p>
+					</ul>
 
 				</article>	
 

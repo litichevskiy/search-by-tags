@@ -65,8 +65,10 @@
 
 
     function getUnicId () {
+        //new Date().toString().split(' ').slice(1,5).join(' '); 
         return (new Date()).getTime();
-    }
+    };
+
 
     function bIncludesA ( a, b ) {
         a.sort();
@@ -99,43 +101,6 @@
     return isMatch;
 };
 
-    // function bIncludesA ( a, b ) {
-    //     var isMatch = false;
-
-    //     for ( var i = 0, l = a.length; i < l; i++ ) {
-        
-    //         var is = false;
-
-    //         for ( var k = 0, l = b.length; k < l; k++ ) {
-
-    //             if ( a[i] === b[k] ) {
-    //                 is = true;
-    //                 break;
-    //             }
-    //         }
-
-    //         if ( is ) isMatch = true;
-    //         else break;
-    //     }
-
-    //     return isMatch;
-    // }
-
+   
 })();
 
-
-
-
-
-document.querySelector('[data-name="visibleForm"]').onclick = function ( ) {
-
-    document.querySelector('[data-name="add_Remote_tagName"]').style.visibility = 'visible';
-    document.querySelector('[data-name="visibleForm"]').style.visibility = 'hidden';
-};
-
-
-document.querySelector('[data-name="hiddenForm"]').onclick = function( ) {
-
-    document.querySelector('[data-name="add_Remote_tagName"]').style.visibility = 'hidden';
-    document.querySelector('[data-name="visibleForm"]').style.visibility = 'visible';  
-}

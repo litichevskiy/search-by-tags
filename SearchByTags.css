@@ -1,6 +1,6 @@
 
 div[data-tags-cont="container"]{
-	
+
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -9,17 +9,70 @@ div[data-tags-cont="container"]{
 
 }
 
+section[data-name="add_Remove_tagName"]{
+
+	visibility: hidden;
+	position: absolute;
+	top: 0%;
+	left: 45%;
+	width: 55%;
+	height: 100%;
+}
+
+section[data-name="add_Remove_tagName"] h4{
+
+	padding-top: 2%;
+}
+
+input[data-name="tagsName"],span[data-text-name="tagsName"]{
+
+	position: relative;
+	top: 7%;
+	padding-left: 2%;
+}
+
+span[data-text-name="RemoveTagsName"]{
+
+	padding-left: 5%;
+}
+
+button[data-name="addNotis"]{
+
+	position: relative;
+	top: -3em;
+	left: 17em;
+}
+
+button[data-name="removeNotis"]{
+
+	position: relative;
+	left: 5%;
+}
+
+
+textarea{
+
+	position: relative;
+	top: 2em;
+	left: 5%;
+	width: 90%;
+	height: 60%;
+	max-width: 90%;
+	max-height:60%;
+}
+
 span[data-name="visibleForm"]{
 
-	z-index: 100;
 	position: absolute;
 	right: 2%;
 	top: 1%;
 	border-radius: 50%;
 	font-size: 1em;
-	background-color: #E6E6FA;
-	color: #6495ED;
+	background-color: #6495ED;
+	color: white;
 	padding:0.5%;
+	padding-left: 0.8%;
+	padding-right: 0.8%;
 
 }
 
@@ -31,44 +84,19 @@ span[data-name="visibleForm"],span[data-name="hiddenForm"]:hover{
 span[data-name="hiddenForm"]{
 
 	position: absolute;
-	right: 0%;
-	margin: 1%;
+	top: 1%;
+	right: 2%;
+	border-radius: 50%;
+	padding: 0.5%;
+	padding-left: 0.8%;
+	padding-right: 0.8%;
 	background-color:#6495ED;
 	color: white; 
 
 }
 
-form[data-name="add_Remote_tagName"]{
-	 
-	visibility: hidden; 
-	background-color: lightgrey;
-	z-index: 100;
-	position: absolute;
-	right: 2%;
-	top: 1%;
-	width: 30%;
-	
-}
 
-fieldset{
-
-	max-width: 92%;
-
-}
-
-legend{
-
-	max-width: 90%;
-	
-}
-
-textarea{
-
-	max-width: 25em;
-	max-height: 10em;
-}
-
-section[data-tags-cont="list"]{ 
+section[data-tags-cont="listTags"]{ 
 
 	position: absolute;
 	top: 0%;
@@ -89,7 +117,7 @@ section[data-tags-cont="header"]{
 }
 
 section[data-tags-cont="contentsTag"]{
-
+			
 	position: absolute;
 	top: 0%;
 	left: 45%;
@@ -97,6 +125,17 @@ section[data-tags-cont="contentsTag"]{
 	height: 100%;
 	overflow: auto;
 
+}
+
+section[data-tags-cont="header"] ul li{
+
+	margin-bottom: 4%;
+}
+
+h2{
+
+	padding-left: 10%;
+	padding-top: 4%;
 }
 
 
@@ -110,4 +149,56 @@ ul{
 li{
 
 	list-style-type: none;
+	
+}
+
+
+input[type="checkbox"]{
+
+	cursor: pointer;
+}
+
+h4{
+	margin-top: 4%;
+	cursor: pointer;
+}
+
+input[type="checkbox"] ~ span{
+
+	opacity: 0.6;
+}
+
+input[type="checkbox"]:checked ~ span{
+
+	opacity: 1;
+}
+
+p[data-content-name="notis"]{
+
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-bottom: 3%;
+
+}
+
+input[data-name="search"]{
+
+	z-index: 100;
+	position: absolute;
+	top: 1.5%;
+	right:10%; ;
+}
+
+button[data-name="search"]{
+
+	z-index: 100;
+	position: absolute;
+	top: 1.5%;
+	right:5%; 
+	cursor: pointer;	
+}
+
+span[data-name="date"]{
+
+	font-size: small;
 }
